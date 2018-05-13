@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-block printThis Test</title>
+    <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+    <h1>Multi-Block Test</h1>
+    <h2>Test Details</h2>
+    <ul>
+        <li>Multiple block of content</li>
+        <li>Using <code>section</code> as a selector</li>
+    </ul>
+    <section class="toPrint">
+        <h2>Content</h2>
+        <p>This case is to print two block-level elements of content with printThis.</p>
+    </section>
+    <h2>Ignored Content</h2>
+    <p>This content is not printed.</p>
+    <section class="toPrint">
+        <h2>Content</h2>
+        <p>A second block of printed content.</p>
+    </section>
+    <h2>Action</h2>
+    <button class="printer">Print</button>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/print-this/printThis.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').on('click', function(){
+                $('section').printThis();
+            });
+        });
+    </script>
+</body>
+</html>
