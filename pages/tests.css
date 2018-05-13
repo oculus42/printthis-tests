@@ -9,3 +9,15 @@ body {
         border: 1px dashed gray;
     }
 }
+
+.icon svg path {
+    fill: currentColor;
+}
+
+.icon-flag.branded .svg-flag-pole {
+    fill: #666;
+}
+
+.icon-flag.branded .svg-flag {
+    fill: #69f;
+}
