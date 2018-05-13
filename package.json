@@ -1,0 +1,14 @@
+{
+  "name": "printthis-tests",
+  "version": "0.1.0",
+  "description": "test suite for printThis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Rouse",
+  "license": "MIT",
+  "devDependencies": {
+    "print-this": "^1.12.3"
+  }
+}
