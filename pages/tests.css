@@ -1,0 +1,11 @@
+body {
+    padding: 1em;
+    font-family: 'Cabin', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+
+@media screen {
+    .toPrint {
+        border: 1px dashed gray;
+    }
+}

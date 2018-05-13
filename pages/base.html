@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base printThis Test</title>
+    <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+    <h1>Base Test</h1>
+    <h2>Test Details</h2>
+    <ul>
+        <li>One block of content</li>
+        <li>Using <code>section</code> as a selector</li>
+    </ul>
+    <section class="toPrint">
+        <h2>Content</h2>
+        <p>The basic case is to print a block-level element of content with printThis.</p>
+    </section>
+    <h2>Action</h2>
+    <button class="printer">Print</button>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/print-this/printThis.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').on('click', function(){
+                $('section').printThis();
+            });
+        });
+    </script>
+</body>
+</html>
